@@ -11,7 +11,7 @@ let test;
 let len = phoneNums.length;
 let c = 0;
 while (c < len) {
-    test = re_one.exec(phoneNums[c]);
+    test = phoneNums[c].match(re_one);
     if (test !== null) {
         newNums.push(test[0]);
     }
