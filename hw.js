@@ -1,4 +1,4 @@
-        let txt = "This sentence has hello world in it. hellohello ";
+let txt = "This sentence has hello world in it. hellohello ";
 
 let regex1 = /hello/; //more common to write like this
 let regex2 = /worlds/;
