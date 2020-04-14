@@ -8,6 +8,7 @@ let regEx = /801-\d\d\d-\d\d\d\d/;
 let newArray = phoneNums.filter(elem => regEx.test(elem) && elem.length === 12);
 
 console.log(newArray);
+console.log(phoneNums[7].match(regEx));
 // for (let i = 0; i < phoneNums.length; i++) {
 //     if (regEx.test(phoneNums[i])) {
 //         newArray.push(phoneNums[i]);
