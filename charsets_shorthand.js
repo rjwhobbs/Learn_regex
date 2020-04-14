@@ -1,6 +1,6 @@
 // \d (digits) = [0-9]
 // \w (word) = [a-zA-Z0-9_]
-// \s (space) = [ \t\n\r]
+// \s (space) = [ \t\n\r] // There's a space after the '['
 
 // \D = [^0-9]
 // \W = [^a-zA-Z]
@@ -21,3 +21,9 @@ let txt = "this sentence \t\r \n (123457890) YOO!!!!.";
 console.log(txt.match(reg4));
 console.log(txt.match(reg5));
 console.log(txt.match(reg6));
+
+let reg7 = /\w\w\w/g;
+let txt2 = "He is holding his hat in his hand." // So it seems once a match/pattern is found the next search 
+// starts off at the very next index after the end of the previous match
+
+console.log(txt2.match(reg7)); // = [ 'hol', 'din', 'his', 'hat', 'his', 'han' ]
