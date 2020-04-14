@@ -5,8 +5,12 @@
 let txt = "SHe sells seashells on a seashore. The shells she sells are seashells,\nI'm sure.";
 let reg1 = /[A-Z]?/g;
 let reg2 = /s[a-z]+/g; // this is called being greedy
+let reg3 = /s[a-z]?/g; 
+let reg4 = /s[a-z]*/g; 
 
 console.log(txt.match(reg2));
+console.log(txt.match(reg3));
+console.log(txt.match(reg4));
 // console.log(txt.match(reg1)); 
 // There are 0 occurences so it returns that 0 occurence
 /* [
