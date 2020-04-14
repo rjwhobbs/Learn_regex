@@ -1,0 +1,5 @@
+// exceptions, you MAY need to escape these in char sets
+// -, ^, 
+
+// You need to escape these's
+//  \, ]
