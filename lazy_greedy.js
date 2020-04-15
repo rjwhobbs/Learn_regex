@@ -4,7 +4,7 @@
  let reg1 = /<p>.*<\/p>/g; // '/' is a meta char. This is a greedy exp, it matches as much as it can. 
  //The engine will back track beacuse the greediness took everything. 
  // infact you can leave out the closing tag interms of the match.
- let reg2 = /<p>.*?<\/p>/g; // the '?' forces laziness, it back tracks earlier. 
+ let reg2 = /<p>.*?<\/p>/g; // the '?' forces laziness, it back tracks after each char. 
 
  console.log(txt.match(reg1));
  console.log(txt.match(reg2));
