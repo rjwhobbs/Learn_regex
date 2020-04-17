@@ -4,7 +4,7 @@ Iterate through the data provided. Use a regular expression to store the names i
 
 let data = ["Jensen,", "Smith, Andrea", "Jorgensen, Michael", "Vasefi, Annika", "Lopez, Monica", "Crockett, Steven"];
 let newData = [];
-let regex = /(\w+)(\W+)(\w+)/;
+let regex = /(\w+)(\W+)(\w+)/; // Beware of 'g' flag here as this sets a static index counter for exec
 
 newData = data.map(item => {
     let arr = regex.exec(item);
