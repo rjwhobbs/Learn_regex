@@ -1,5 +1,6 @@
 // ?= lookahead group
 // Lookahead groups don't consume any chars but they help make the match
+// Lookahead groups are also non capturing
 
 let data = "things.com youtube.com potato.com";
 let reg1 = /\w+(?=\.com)/g; // This is saying match all words that end in '.com' but don't include the '.com'
@@ -15,3 +16,4 @@ console.log(reg2.test(data2)); // true
 let data3 = "Aaxccccc";
 let reg3 = /^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?!.*[0-9]).*$/ // This string must NOT contain a number
 console.log(reg3.test(data3)); // True
+console.log(data3.match(reg3));
