@@ -12,4 +12,12 @@ let newArr = arr.map(val => {
     return val.replace(/(\w+)\s+(\w+)/, "$2 *** $1");
 });
 
-console.log(newArr);
+let reg2 = /^(2[5][0-5]|2[0-4]\d|1\d\d|\d\d|\d)$/;
+
+let i = 0;
+while (i < 256) {
+    let test = i.toString();
+    console.log(reg2.test(test), test);
+    i++;
+}
+
