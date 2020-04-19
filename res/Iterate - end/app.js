@@ -15,3 +15,4 @@ while (match = regex.exec(phrase)) {
 }
 
 // Last index is also available on test
+// Lastindex is used if an expression returns a zero lengthed match
