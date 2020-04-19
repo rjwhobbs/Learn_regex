@@ -8,7 +8,10 @@ let regex = /\d+/g,
     match = null;
 
 while (match = regex.exec(phrase)) {
+    console.log(regex.lastIndex);
     if (match.index == regex.lastIndex) regex.lastIndex++;
     console.log(match);
     console.log(regex.lastIndex);
 }
+
+// Last index is also available on test
